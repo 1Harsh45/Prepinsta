@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: lightblue;
+            color: black;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav a {
+            color:black;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .profile-img {
+            max-width: 100%;
+            height: auto;
+            border: beige;
+        }
+        .skills-list {
+            list-style-type: disc;
+            padding-left: 0;
+        }
+        .skills-list li {
+            margin-bottom: 10px;
+        }
+        .Hobbies{
+            list-style-type: disc;
+            padding-left: 0;
+        }
+        .Hobbies li {
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Harshal Meshram</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my personal website! Following are the short introduction about myself.</p>
+            <img class="profile-img" src="photo1.jpeg" alt="Profile Picture">
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>JAVA</li>
+                <li>C LANGUAGE</li>
+                <li>DSA IN JAVA</li>
+                <li>OS-WNDOWS & LINUX</li>
+                <li>MYSQL</li>
+             
+            </ul>
+        </section>
+        <section id="Hobbies">
+            <h2>My Hobbies</h2>
+            <ul class="Hobbies">
+                <li>Playing Cricket</li>
+                <li>Listening Music</li>
+                <li>Travelling</li>
+                <li>Learning new skills</li>
+            </ul>
+
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me via email.</p>
+            <a href="E-MAIL">harshalmeshram718@gmail.com</a>
+        </section>
+    </div>
+</body>
+</html>

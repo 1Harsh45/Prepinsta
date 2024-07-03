@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram Logo</title>
+<style>
+  body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .instagram-logo {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(to right, #f58529, #dd2a7b, #8134af, #515bd4, #2c8ed6, #17bf63);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .camera-outline {
+    width: 70%;
+    height: 70%;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #f58529, #dd2a7b, #8134af, #515bd4, #2c8ed6, #17bf63);
+  }
+  
+  .lens {
+    width: 40%;
+    height: 40%;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+  }
+  
+  .lens::before {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 50%;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+  }
+</style>
+</head>
+<body>
+  <div class="instagram-logo">
+    <div class="camera-outline">
+      <div class="lens"></div>
+    </div>
+  </div>
+</body>
+</html>

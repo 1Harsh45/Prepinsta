@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TABLE</title>
+</head>
+<style>
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+
+    }
+
+    .tr1,
+    td {
+        width: 100px;
+        height: 50px;
+    }
+
+    .tr2 {
+        background-color: lightgrey;
+
+    }
+
+    .tr3 {
+        background-color: lightgrey;
+    }
+</style>
+
+<body>
+    <h2>Interim Term 2 Elizabeth College Timetable 2020</h2>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+
+
+        </thead>
+        <tbody>
+            <tr class="tr1">
+                <td>8.30-9.30</td>
+                <td style="background-color: rgba(230, 230, 72, 0.926);">Line 1</td>
+                <td style="background-color: lavender;">Line 4</td>
+                <td style="background-color: rgb(232, 189, 109);">Line 3</td>
+                <td style="background-color: lightgreen;">Line 5</td>
+                <td style="background-color:rgb(232, 189, 109) ;">Line 3</td>
+            </tr>
+            <tr class="tr2">
+                <td style="background-color: white;">10.00-10.30</td>
+                <td>Recess</td>
+                <td>Recess</td>
+                <td>Recess</td>
+                <td>Recess</td>
+                <td>Recess</td>
+            </tr>
+            <tr>
+                <td>10.30-11.30</td>
+                <td rowspan="2" style="background-color: lightblue;">Line 2</td>
+                <td rowspan="2" style="background-color: lightgreen;">Line 5</td>
+                <td rowspan="" style="background-color: pink;">Home Group</td>
+                <td rowspan="2" style="background-color: lavender;">Line 4</td>
+                <td rowspan="2" style="background-color: rgba(230, 230, 72, 0.926) ;">Line 1</td>
+            </tr>
+            <tr>
+                <td>11.30-12.30</td>
+                <td style="background-color: lightblue;">Line 2</td>
+            </tr>
+            <tr class="tr3">
+                <td style="background-color: white;">12.30-1.00</td>
+                <td>Lunch</td>
+                <td>Lunch</td>
+                <td>Lunch</td>
+                <td>Lunch</td>
+                <td>Lunch</td>
+            </tr>
+            <tr>
+                <td>1.00-1.30</td>
+                <td rowspan="2" style="background-color:rgb(232, 189, 109) ;">Line 3</td>
+                <td style="background-color: lightgreen;">Line 5</td>
+                <td style="background-color:  rgba(230, 230, 72, 0.926);">Line 1</td>
+                <td style="background-color: lavender;">Line 4</td>
+                <td rowspan="2" style="background-color: lightblue;">Line 2</td>
+            </tr>
+            <tr>
+                <td>2.00-2.30</td>
+                <td rowspan="2">Staff Meeting</td>
+                <td rowspan="2">Teacher Assessment & Preparation</td>
+                <td rowspan="2">Leadership Meeting</td>
+                
+               
+            </tr>
+            <tr>
+                <td>2.30-3.30</td>
+                <td>Teacher Assessment & Preparation</td>
+                <td>Teacher Assessment & Preparation</td>
+                
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>
