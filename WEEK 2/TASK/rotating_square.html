@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Logo Animation</title>
+   <style>
+    /* styles.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.square {
+    width: 70px;
+    height: 70px;
+    background-color: #4682b4; /* Steel blue */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+    animation-name: shrinkTopLeft;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+    animation-name: expandTopRight;
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+    animation-name: expandBottomLeft;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+    animation-name: shrinkBottomRight;
+}
+
+@keyframes shrinkTopLeft {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+}
+
+@keyframes expandTopRight {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(50%, -50%) scale(1.5);
+    }
+}
+
+@keyframes expandBottomLeft {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, 50%) scale(1.5);
+    }
+}
+
+@keyframes shrinkBottomRight {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(50%, 50%) scale(0.5);
+    }
+}
+
+   </style>
+<body>
+    <div class="container">
+        <div class="square top-left"></div>
+        <div class="square top-right"></div>
+        <div class="square bottom-left"></div>
+        <div class="square bottom-right"></div>
+    </div>
+</body>
+</html>
