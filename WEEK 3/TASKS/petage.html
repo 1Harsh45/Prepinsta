@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Age Calculator</title>
+</head>
+<body>
+    <div id="result1"></div>
+    <div id="result2"></div>
+    <div id="result3"></div>
+
+    <script>
+        function calculatePetAge(petAge, conversionRate = 7) {
+            const petAgeInHumanYears = petAge * conversionRate;
+            return petAgeInHumanYears;
+        }
+
+        function displayResult(elementId, petAge, conversionRate, petType) {
+            const petAgeInHumanYears = calculatePetAge(petAge, conversionRate);
+            document.getElementById(elementId).innerText = `Your ${petType} is ${petAgeInHumanYears} years old in ${petType} years!`;
+        }
+
+        // Call the function with different values
+        displayResult('result1', 3, 7, 'kitty'); 
+        displayResult('result2', 5, 5, 'doggy');
+        displayResult('result3', 2, 4, 'bunny'); 
+    </script>
+</body>
+</html>

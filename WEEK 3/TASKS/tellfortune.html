@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Teller</title>
+</head>
+<body>
+    <h1>Your Fortune</h1>
+    <div id="fortune1"></div>
+    <div id="fortune2"></div>
+    <div id="fortune3"></div>
+
+    <script>
+        function tellFortune(children, partner, location, jobTitle) {
+            return `You will be a ${jobTitle} in ${location}, and married to ${partner} with ${children} kids.`;
+        }
+
+        // Displaying fortunes
+        document.getElementById('fortune1').innerText = tellFortune(3, 'Anjali', 'New York', 'Engineer');
+        document.getElementById('fortune2').innerText = tellFortune(2, 'Rohit', 'Paris', 'Artist');
+        document.getElementById('fortune3').innerText = tellFortune(4, 'Virat', 'Tokyo', 'Cricketer');
+    </script>
+</body>
+</html>
